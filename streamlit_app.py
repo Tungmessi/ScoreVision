@@ -16,6 +16,7 @@ import io
 # ─────────────────────────────────────────────────────────────────
 # PAGE CONFIG & LANGUAGE
 # ─────────────────────────────────────────────────────────────────
+# Trigger reload for new datasets
 st.set_page_config(
     page_title="ScoreVision",
     page_icon="🎓",
