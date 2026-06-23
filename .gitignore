@@ -39,6 +39,7 @@ venv.bak/
 
 # Data and Models
 *.pth
+!models/EfficientNet_B0.pth
 *.pt
 *.onnx
 *.h5
@@ -47,6 +48,7 @@ venv.bak/
 *.pkl
 *.json
 !metadata.json
+!Test_Phieu_01/phase3b_boxes_manual_full.json
 
 # Exclude specific heavy folders and files from this project
 Handwritten Digits 0 - 9/
