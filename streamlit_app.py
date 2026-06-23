@@ -513,6 +513,14 @@ with tab1:
                 st.image(str(page_02), caption=t("Trang 2", "Page 2"), use_column_width=True)
     else:
         st.warning(t("Chưa tìm thấy dữ liệu Test_Phieu_01 trong thư mục.", "Test_Phieu_01 data not found in the directory."))
+        st.write("DEBUG INFO: BASE=", str(BASE))
+        st.write("Does csv_print_path exist?", csv_print_path.exists())
+        st.write("Does csv_labels_path exist?", csv_labels_path.exists())
+        st.write("Contents of BASE folder:")
+        st.write([str(p.name) for p in BASE.iterdir()] if BASE.exists() else "BASE not found")
+        test_phieu_01_path = BASE / "Test_Phieu_01"
+        st.write("Contents of Test_Phieu_01 folder:")
+        st.write([str(p.name) for p in test_phieu_01_path.iterdir()] if test_phieu_01_path.exists() else "Test_Phieu_01 not found")
 
 # ══════════════════════════════════════════════════════════════════
 # TAB 2 – DỰ ĐOÁN THỰC TẾ
